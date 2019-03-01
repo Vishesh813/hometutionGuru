@@ -1,0 +1,338 @@
+Find a home Tutor in Meerut,Kanpur ,Lucknow,Gurgaon & Gorakhpur 7302680146
+To find the home tutor near you...fill the query form downside or drop a call or whatsapp on 7302680146 or 7752914545.
+
+73 02 68 01 46Working Hours
+You can call us anytime....
+
+call us 0n -7392680146 whatsapp us -7302680146
+
+e-mail us - info@hometuitionguru.com
+https://www.google.co.in/maps/dir//home+tuition+guru,+duplex-71+,+godwin+society+,near+subharthi+univerity,+godwin+hotel,+Jattiwara,+Meerut,+Uttar+Pradesh+250002/@28.984462,77.706414,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390c64fbf5746bad:0x652342efdefd5fca!2m2!1d77.706414!2d28.984462Better yet, see us in person!
+We love our customers, so feel free to visit during normal business hours.
+
+hometuitionguru.com
+9068777199
+
+Hours
+Monday - Friday: 9am - 5pm
+
+Saturday: By appointment
+
+Sunday: Closed
+STEP 2  -> Please send your complete resume/CV along with your address-proof to our email-id info@hometuitionguru.com ,to make your registration successful.
+
+(make sure your resume must contain your photograph with complete address).
+
+Kindly read the terms & conditions given below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php> 
+	 if (isset($_POST['submit']))
+	 {
+		 $name =  $_POST['name'];
+		 $email =$_POST['email'];
+		 $contact = $_POST['contact'];
+		 $subject&class = $_POST['subject&class'] ;
+		 
+		 
+         $Experience_&_Desired_Locality =  $_POST['Experience_&_Desired_Locality'];
+		 $reference =  $_POST['reference'];
+		 $con  = mysqli_connect('localhost','root','','info');
+		 
+		 
+		  $query = "INSERT INTO `info`( `name`, `email`, `number`, `subject&class`, `Experience_&_Desired_Locality`, `reference`) VALUES ('$name','$email','$contact','$subject&class')";
+		 $run   = mysqli_query($con,$query);
+		 if($run == TRUE)
+		 {
+			 echo "your message has been send successfully";
+			 
+		 }
+		 else
+		 { echo " error "; }
+		 
+	 }   
+?>
+
+
+
+
+
+
+ <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="memberinfo.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number"name="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject and class you want to teach</label>
+                            <input type="text"name="subject&classs" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Experience and Desired Locality to Teach</label>
+                            <input type="text" name="Experience_&_Desired_Locality" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Refered By(Mention the name of the person)</label>
+                            <input type="text" name="reference"  required="required" class="form-control" rows="8">
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" >Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+				
+
+
+
+
+
+<?php
+     
+	 
+	 if (isset($_POST['submit']))
+	 {
+		 $name =  $_POST['name'];
+		 $email =$_POST['email'];
+		 $contact =$_POST['number'];
+		 $subject = $_POST['subject'] ;
+         $ExperienceLocality =  $_POST['ExperienceLocality'];
+		 $reference =  $_POST['reference'];
+		 
+		 $con  = mysqli_connect('localhost','root','','memberinfo');
+		 
+		 
+$query = "INSERT INTO `info`( `name`, `email`, `number`, `subject`, `ExperienceLocality`, `reference`) VALUES ('$name','$email','$contact','$subject',$ExperienceLocality,$reference)";
+		 $run   = mysqli_query($con,$query);
+		 if($run == TRUE)
+		 {
+			 echo "your message has been send successfully";
+			 
+		 }
+		 else
+		 { echo " error "; }
+		 
+	 }   
+?>
+
+
+
+
+('$name','$email','$contact','$subject',$ExperienceLocality,$reference)
+  
+     
+
+
+form code
+
+
+  <form  method="post" action="memberinfo.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number"name="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject and class you want to teach</label>
+                            <input type="text"name="subject" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Experience and Desired Locality to Teach</label>
+                            <input type="text" name="ExperienceLocality" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Refered By(Mention the name of the person)</label>
+                            <input type="text" name="reference"   class="form-control" rows="8">
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" >Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+			-------------------------------------------------------------end
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------invoice code
+
+
+
+<?php
+     
+	 
+	 if (isset($_POST['submit']))
+	 {
+		 $name =  $_POST['name'];
+		 $email =$_POST['email'];
+		 $City =$_POST['City'];
+		 $Qualification = $_POST['Qualification'] ;
+         $number = $_POST['number'];
+		 $payment = $_POST['payment'];
+		 
+		 $con  = mysqli_connect('localhost','root','','memberinfo');
+		 if ($con==TRUE)
+		 {
+			    	 echo "wohooooo!<br> you are connected<br>";
+			 
+		 }
+		 
+$query = "INSERT INTO `workshopinvoice`(`name`, `email`, `City`, `Qualification`, `number`, `payment`) VALUES ('$name','$email','$City','$Qualification','$number ','$payment')" ;
+		 $run   = mysqli_query($con,$query);
+		 if($run == TRUE)
+		 {
+			 echo "your invoice is submited successfully";
+			 
+		 }
+		 else
+		 { echo " error in submission "; }
+		 
+	 }   
+?>
+  
+  
+
+--------------------------------------------------------
+
+
+
+ <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Student Class</label>
+                            <input type="text" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject to learn *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>City and Address *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+				
+				
+				
+				
+				  border-bottom: 5px solid #c52d2f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
